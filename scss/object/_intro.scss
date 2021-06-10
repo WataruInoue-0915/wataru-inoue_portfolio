@@ -1,0 +1,54 @@
+.introduction{
+    .inner{
+        .intro-title{
+            margin-top: 0;
+            padding-top: 55px;
+        }
+    }
+}
+
+.intro-cont {
+    display: flex;
+    flex-flow: column-reverse;
+    @include overTab {
+        display: flex;
+        flex-flow: unset;
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 45px;
+    }
+    .description-cont{
+        // margin-top: 20px;
+            flex: 1;
+        .sub_title{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 18px;
+            + .sub_title{
+                // margin-top: 30px;
+            }
+        }
+        .introduction-text{
+            background-color: rgba($color: #e3fdff, $alpha: 0.7);
+            padding: 10px 20px 10px 20px ;
+            border-radius: 15px;
+        }
+    }
+    .profile-image{
+        margin-left: 0;
+        margin-top: 20px;
+        @include overTab{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 50px;}
+        
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+}

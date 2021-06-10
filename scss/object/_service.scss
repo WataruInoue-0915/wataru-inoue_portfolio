@@ -1,0 +1,116 @@
+.service{
+    background-image: url(../image/skill1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.service::before{
+    content: '';
+  position: absolute;
+  /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba($color: white, $alpha: 0.85);
+//   filter: blur(5px);
+  z-index: -1;
+}
+
+.service-cont{
+    padding-right: 30px;
+    padding-left: 30px;
+    @include overTab{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+    .service-list{
+        margin-top: 30px;
+        .service-item{
+            + .service-item{
+                margin-top: 35px;
+                @include overTab{
+                    margin-top: 0;
+                }
+            }
+            @include overTab{
+                display: flex;
+                align-items: center;
+            }
+            &:nth-child(even){
+                @include overTab{
+                    flex-flow: row-reverse;
+                .service-desc{
+                    margin-right: 30px;
+                }
+            }
+        }
+            &:nth-child(odd){
+                @include overTab{
+                .service-desc{
+                    margin-left: 30px;
+                }
+            }    
+        }
+            .service-image{
+                @include overTab{
+                    width: 50%;
+                }
+                img{
+                }
+        }
+            .service-desc{
+                // display: flex;
+                flex: 1;
+                .service-title{
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 25px;
+                    border-bottom: 1px solid rgba(156, 166, 160, 1);
+                    @include overTab{
+                        text-align: left;
+                        margin-top: 0;
+                    }
+                }
+                .service-content{
+                    margin-top: 10px;
+                    @include overTab{
+                        // display: flex;
+                        // align-items: center;
+                    }
+                    .money-estimate{
+                        text-align: center;
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .detail{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .cmn-link{
+        margin-top: 45px;
+        margin-bottom: 35px;
+        a {
+            width: 50%;
+            @include overTab{
+                width: 35%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+            background-color: #1fd1fd;
+        }
+    }
+}

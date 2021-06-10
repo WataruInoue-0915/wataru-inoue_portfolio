@@ -1,0 +1,38 @@
+.cmn-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    &.-black {
+        background-color: cl(black);
+    }
+}
+
+.cmn-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+    font-size: 30px;
+    &.-white{
+        color: white;
+    }
+    p {
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+}
+
+.cmn-link {
+    a {
+        color: black;
+        background-color:#1fd1fd;
+        display: flex;
+        width: 155px;
+        height: 37px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+}

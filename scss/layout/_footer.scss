@@ -1,0 +1,52 @@
+.footer {
+    .inner {
+        // background-color: rgba($color: #e3fdff, $alpha: 0.7);
+
+        background-image: url(../image/handshake2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+
+        padding-bottom: 15px;
+        border-top: 1px solid #6E6E6E;
+        .cmn-title{
+            margin-top: 50px;
+        }
+        .cmn-link{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            a {
+                width: 50%;
+                @include overTab{
+                    width: 35%;
+                }
+            }
+        }
+        .contact-text{
+            margin-bottom: 80px;
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .inner::before{
+        content: '';
+        position: absolute;
+        /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba($color: white, $alpha: 0.85);
+        //   filter: blur(5px);
+        z-index: -1;
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+}
