@@ -664,10 +664,10 @@ img {
 }
 
 .portfolio {
-/*   background-image: url(../image/MyPhoto4.jpg); */
-/*   background-attachment: fixed; */
-/*   background-position: center; */
-/*   background-size: cover; */
+  background-image: url(../image/MyPhoto4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   position: relative;
   z-index: 1;
   color: black;
@@ -802,26 +802,26 @@ img {
 }
 
 .portfolio::before {
-/*   content: ''; */
-/*   position: absolute; */
+  content: '';
+  position: absolute;
   /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-/*   top: 0px; */
-/*   bottom: 0px; */
-/*   left: 0px; */
-/*   right: 0px; */
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   background-color: rgba(0, 0, 0, 0.5);
-/*   z-index: -1; */
+  z-index: -1;
   
 /*   edited on 06/17 */
-  content:"";
-  display:block;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:-1;
-  width:100%;
-  height:100vh;
-  background:url(../image/MyPhoto4.jpg) center no-repeat;
-  background-size:cover;
+/*   content:""; */
+/*   display:block; */
+/*   position:fixed; */
+/*   top:0; */
+/*   left:0; */
+/*   z-index:-1; */
+/*   width:100%; */
+/*   height:100vh; */
+/*   background:url(../image/MyPhoto4.jpg) center no-repeat; */
+/*   background-size:cover; */
 }
 /*# sourceMappingURL=style.css.map */
