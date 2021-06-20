@@ -1,6 +1,5 @@
 .service{
     background-image: url(../image/skill1.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -8,6 +7,9 @@
     color: black;
     padding-bottom: 20px;
     padding-top: 20px;
+    @include overTab-wide{
+        background-attachment: fixed;
+    }
 }
 
 .service::before{

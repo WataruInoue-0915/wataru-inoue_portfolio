@@ -1,11 +1,13 @@
 .portfolio{
     background-image: url(../image/MyPhoto4.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 1;
     color: black;
+    @include overTab-wide{
+        background-attachment: fixed;
+    }
     // padding-bottom: 20px;
     // padding-top: 20px;
     .inner{

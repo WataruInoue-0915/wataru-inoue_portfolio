@@ -256,13 +256,18 @@ img {
 
 .footer .inner {
   background-image: url(../image/handshake2.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
   padding-bottom: 15px;
   border-top: 1px solid #6E6E6E;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .footer .inner {
+    background-attachment: fixed;
+  }
 }
 
 .footer .inner .cmn-title {
@@ -312,11 +317,16 @@ img {
 
 .my_introduction {
   background-image: url(../image/MyPhoto7.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 700px;
   position: relative;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .my_introduction {
+    background-attachment: fixed;
+  }
 }
 
 .my_introduction .myname {
@@ -437,11 +447,16 @@ img {
   background-image: url(../image/computer1.jpg);
   padding-top: 35px;
   margin-top: 20px;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .skill {
+    background-attachment: fixed;
+  }
 }
 
 .skill::before {
@@ -475,22 +490,21 @@ img {
 }
 
 @media print, screen and (min-width: 768px) {
-  .skill-cont .skill {
+  .skill-cont .skill-item {
     width: 25%;
   }
-  .skill-cont .skill:nth-child(n+2) {
+  .skill-cont .skill-item:nth-child(n+2) {
     margin-left: 30px;
   }
 }
 
-.skill-cont .skill .level {
+.skill-cont .skill-item .level {
   margin-top: 10px;
   text-align: center;
 }
 
 .service {
   background-image: url(../image/skill1.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -498,6 +512,12 @@ img {
   color: black;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .service {
+    background-attachment: fixed;
+  }
 }
 
 .service::before {
@@ -630,12 +650,17 @@ img {
 
 .portfolio {
   background-image: url(../image/MyPhoto4.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
   color: black;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .portfolio {
+    background-attachment: fixed;
+  }
 }
 
 .portfolio .inner {
@@ -733,7 +758,7 @@ img {
   }
 }
 
-@media print, screen and (min-width: 1200px) {
+@media print, screen and (min-width: 1024px) {
   .portfolio .inner .portfolio-cont .portfolio-list .portfolio-item a .portfolio .caption {
     font-size: 20px;
   }

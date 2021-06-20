@@ -2,11 +2,13 @@
     background-image: url(../image/computer1.jpg);
     padding-top: 35px;
     margin-top: 20px;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 1;
+    @include overTab-wide{
+        background-attachment: fixed;
+    }
 }
 .skill::before{
     content: '';
@@ -35,7 +37,7 @@
         margin: 0 auto;
         width: 100%;
     }
-    .skill{
+    .skill-item{
         
         @include overTab{
             width: 25%;

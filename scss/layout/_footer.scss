@@ -1,16 +1,16 @@
 .footer {
     .inner {
         // background-color: rgba($color: #e3fdff, $alpha: 0.7);
-
         background-image: url(../image/handshake2.jpg);
-        background-attachment: fixed;
         background-position: center;
         background-size: cover;
         position: relative;
         z-index: 1;
-
         padding-bottom: 15px;
         border-top: 1px solid #6E6E6E;
+        @include overTab-wide{
+            background-attachment: fixed;
+        }
         .cmn-title{
             margin-top: 50px;
         }
