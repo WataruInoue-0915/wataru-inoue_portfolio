@@ -19,6 +19,7 @@
             margin-bottom: 30px;
             a {
                 width: 50%;
+                font-size: 24px;
                 @include overTab{
                     width: 35%;
                 }
@@ -27,6 +28,7 @@
         .contact-text{
             margin-bottom: 80px;
             p{
+                font-size: 22px;
                 text-align: center;
             }
         }
