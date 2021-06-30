@@ -36,7 +36,7 @@ $colors: (
 	}
 }
 @mixin overTab-wide {
-	@media print,screen and (min-width: 1024px) {
+	@media print,screen and (min-width: 1400px) {
 		@content;
 	}
 }

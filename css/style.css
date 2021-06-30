@@ -322,7 +322,7 @@ p {
   border-top: 1px solid #6E6E6E;
 }
 
-@media print, screen and (min-width: 1024px) {
+@media print, screen and (min-width: 1400px) {
   .footer .inner {
     background-attachment: fixed;
   }
@@ -390,7 +390,7 @@ p {
   position: relative;
 }
 
-@media print, screen and (min-width: 1024px) {
+@media print, screen and (min-width: 1400px) {
   .my_introduction {
     background-attachment: fixed;
   }
@@ -528,7 +528,7 @@ p {
   z-index: 1;
 }
 
-@media print, screen and (min-width: 1024px) {
+@media print, screen and (min-width: 1400px) {
   .skill {
     background-attachment: fixed;
   }
@@ -601,7 +601,7 @@ p {
   color: black;
 }
 
-@media print, screen and (min-width: 1024px) {
+@media print, screen and (min-width: 1400px) {
   .service {
     background-attachment: fixed;
   }
@@ -752,7 +752,7 @@ p {
   color: black;
 }
 
-@media print, screen and (min-width: 1024px) {
+@media print, screen and (min-width: 1400px) {
   .portfolio {
     background-attachment: fixed;
   }
