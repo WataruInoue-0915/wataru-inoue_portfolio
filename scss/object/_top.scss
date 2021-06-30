@@ -15,10 +15,10 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         text-align: center;
-        font-size: 35px;
+        // font-size: 35px;
         width: 100%;
         @include overTab {
-            font-size: 50px;
+            // font-size: 50px;
         }
     }
     .worker_type {
@@ -28,10 +28,10 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         text-align: center;
-        font-size: 25px;
+        // font-size: 25px;
         width: 100%;
         @include overTab {
-            font-size: 37px;
+            // font-size: 37px;
         }
     }
 }

@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wataru Inoue's Portfolio</title>
+    <title>WataruInouePortfolio</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -22,7 +20,6 @@
 <body>
     <header class="header">
         <div class="header-fixed">
-            <!-- <h1 class="header-logo"><img src="image/logo.png" alt="極楽亭"></h1> -->
             <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
         </div>
         <div class="nav header-nav" id="nav">
@@ -41,47 +38,64 @@
         <!--タイトル-->
         <div class="my_introduction wow fadeIn" data-wow-duration="2s">
             <h1 class="myname">Wataru Inoue's Portfolio</h1>
-            <p class="worker_type">- Web Engineer -</p>
+            <h2 class="worker_type">- Web Engineer -</h2>
         </div>
 
         <!-- 自己紹介 -->
         <section class="introduction cmn-section">
             <div class="inner">
-                <h2 class="cmn-title intro-title wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
-                    <i class="fas fa-user"></i> <p>About Me</p>
-                </h2>
+                <div class="cmn-title intro-title wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
+                    <i class="fas fa-user"></i> <h2>About Me</h2>
+                </div>
                 <div class="intro-cont">
                     <div class="description-cont wow fadeIn">
-                        <div class="sub_title">
-                            <span class="glyphicon glyphicon-apple" style="letter-spacing:5px;"></span> <p>Introduction</p>
-                        </div>
-                        <div class="introduction-text">
-                            <p>
-                            <span style="font-weight: bold">Wataru　(井上　航)</span><br>1997年生まれ佐賀県唐津市出身<br><br>
-                            現在フロントエンドを中心に、Webサイト制作を行なっております。<br><br>
-                            「<span style="font-weight: bold; color:red;">質</span>」と「<span style="font-weight:bold; color:red;">スピード</span>」を重視することで、期待以上のものを提供させていただきます。<br><br>
-                            また、クライアント様に寄り添った<span style="font-weight:bold;color:red;">丁寧なコミュニケーション</span>を常に心がけ、
-                            <span style="font-weight:bold;color:red;">最後まで責任を持って</span>、仕事に取り組ませていただきます!
-                            </p>
-                        </div>
-                
-                        <div class="sub_title">
-                            <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <p>Educations</p>
-                        </div>
-                
-                        <div class="introduction-text animated fadein">
-                            1997年：佐賀県唐津市出身<br>
-                            2018年：佐世保工業高等専門学校を首席で卒業<br>
-                            2020年：九州大学機械航空工学科卒業<br>
-                            2020年：九州大学航空宇宙専攻科入学<br>（国際学会1本執筆）<br>
+                        <div class="description-list">
+                            <div class="description-item">
+                                <div class="sub_title">
+                                    <h3>Introduction</h3>
+                                </div>
+                                <div class="introduction-text">
+                                    <p>
+                                        <div class="myname"><span style="font-weight: bold">Wataru (井上　航)</span></div>
+                                        <br>1997年生まれ佐賀県唐津市出身<br><br>
+                                        現在フロントエンドを中心に、Webサイト制作を行なっております。<br><br>
+                                        「<span style="font-weight: bold; color:red;">質</span>」と「<span style="font-weight:bold; color:red;">スピード</span>」を重視することで、期待以上のものを提供させていただきます。<br><br>
+                                        また、クライアント様に寄り添った<span style="font-weight:bold;color:red;">丁寧かつ小まめなコミュニケーション</span>を常に心がけ、
+                                        <span style="font-weight:bold;color:red;">最後まで責任を持って</span>、仕事に取り組ませていただきます!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <div class="sub_title">
+                                    <h3>Educations</h3>
+                                </div>
+                                <div class="introduction-text animated fadein">
+                                    <dl class="education-list">
+                                        <div class="education-item">
+                                            <dt class="edu-year">1997年：</dt>
+                                            <dd class="edu-desc">佐賀県唐津市出身</dd>
+                                        </div>
+                                        <div class="education-item">
+                                            <dt class="edu-year">2018年：</dt>
+                                            <dd class="edu-desc">佐世保工業高等専門学校を首席で卒業</dd>
+                                        </div>
+                                        <div class="education-item">
+                                            <dt class="edu-year">2020年：</dt>
+                                            <dd class="edu-desc">九州大学機械航空工学科卒業</dd>
+                                        </div>
+                                        <div class="education-item">
+                                            <dt class="edu-year">2020年：</dt>
+                                            <dd class="edu-desc">九州大学航空宇宙専攻科入学（国際学会1本執筆）</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="profile-image wow fadeIn" >
                         <img src="./image/MyPhoto5.jpg" alt="myprofile"/>
                     </div>
                 </div>
-
-                
             </div>
         </section>
 
@@ -89,109 +103,115 @@
         <section class="skill cmn-section wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
             <div class="inner">
                 <div class="cmn-title -white">
-                    <i class="fas fa-cogs"></i><p>Skills</p>
+                    <i class="fas fa-cogs"></i><h2>Skills</h2>
                 </div>
                 <div class="skill-cont">
-                    <div class="skill-item">
-                        <img src="./image/HTML.jpg" alt="frontend languages" />
-                        <p class="level">Level: ★★★★★</p>
-                        <p>見やすいコード、SEOを意識したコーディングが得意です。</p>
-                    </div>
-        
-                    <div class="skill-item">
-                        <img src="./image/CSS.jpg" alt="frontend languages" />
-                        <p class="level">Level: ★★★★★</p>
-                        <p>美しいサイト制作を心がけます。希望のデバイスに沿ったレスポンシブデザインも可能です。</p>
-                    </div>
-        
-                    <div class="skill-item">
-                        <img src="./image/Javascript.jpg" alt="frontend languages" />
-                        <p class="level">Level: ★★★★★</p>
-                        <p>メニューバーの設置やスライドなど、サイト上に希望のアニメーションをつけることが可能です。</p>
-                    </div>
-        
-                    <div class="skill-item">
-                        <img src="./image/Wordpress.jpg" alt="Wordpress" />
-                        <div class="level">Level: ★★★★★</div>
-                        <p>Wordpressのオリジナルテーマ作成、プラグインの設置など、メンテナンスなど多岐に渡り知識があります。</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="./image/html-5.svg" alt="frontend languages" />
+                            <p>見やすいコード、SEOを意識したコーディングが得意です。修正やメンテナンスのことまで考えた丁寧なコーディングを徹底します。</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./image/css-3.svg" alt="frontend languages" />
+                            <p>シンプルで美しく、ユーザーファーストのサイト制作を心がけます。希望のデバイスに沿ったレスポンシブデザインも徹底します。</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./image/javascript.svg" alt="frontend languages" />
+                            <p>メニューバーの設置やスライドなど、サイト上に希望のアニメーションをつけることが可能です。</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./image/wordpress.svg" alt="Wordpress" />
+                            <p>Wordpressのオリジナルテーマ作成、プラグインの設置、メンテナンスなど多岐に渡り知識があります。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- サービス紹介 -->
-        <section class="service">
+        <section class="service cmn-section">
             <div class="inner service-point">
                 <div class="cmn-title wow fadeIn" data-wow-duration="1s">
-                    <i class="fas fa-laptop-code"></i><p>Service</p>
+                    <i class="fas fa-laptop-code"></i><h2>Service</h2>
                 </div>
-
                 <div class="service-cont">
                     <div class="service-list">
                         <div class="service-item wow fadeInLeft" data-wow-duration="2s" data-wow-offset="100">
                             <div class="service-image">
-                                <img src="./image/typing.jpg" alt="coding" />
+                                <img src="./image/typing.jpg" alt="coding"/>
                             </div>
                             <div class="service-desc">
-                                <div class="service-title">コーディング</div>
-                                <div class="service-content">
-                                    LPやコーポレートサイト、ブログなど、
-                                    目的に応じた適切なコーディングを行います(レスポンシブ対応可)。また、軽微なコードの修正などにも対応しています。<br>
+                                <h3 class="service-title">コーディング</h3>
+                                <div class="service-explain">
+                                    <p>
+                                        LPやコーポレートサイト、ブログなど、
+                                        目的に応じた適切なコーディングを行います(レスポンシブ対応可)。また、軽微なコードの修正などにも対応しています。修正やメンテナンスのことまで考えた丁寧なコーディングを徹底します。
+                                    </p>
                                     <div class="money-estimate">
-                                        【料金目安】<br>
-                                        コード修正: <span style="font-weight:bold;color:red;">¥10,000~/1p</span><br>
-                                        LP制作: <span style="font-weight:bold;color:red;">¥20,000~/1p</span>
+                                        <h3>【料金目安】</h3>
+                                        <p>
+                                            コード修正: <span style="font-weight:bold;color:red;">¥10,000~/1p</span><br>
+                                            LP制作: <span style="font-weight:bold;color:red;">¥20,000~/1p</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
                         <div class="service-item wow fadeInRight" data-wow-duration="2s" data-wow-offset="100">
                             <div class="service-image">
-                                <img src="./image/design2.jpg" alt="web design" />
+                                <img src="./image/design2.jpg" alt="web design"/>
                             </div>
 
                             <div class="service-desc">
-                                <div class="service-title">Webデザイン</div>
-                                <div class="service-content">
-                                    ヒアリングにより、ご要望に沿ったデザインを的確に把握し作成致します。
-                                    ユーザーインターフェースを重要視した設計を行い、ご期待を超える提案を提供します。<br>
-                                    <div class="money-estimate">【料金目安】<br>
+                                <h3 class="service-title">Webデザイン</h3>
+                                <div class="service-explain">
+                                    <p>
+                                        ヒアリングにより、ご要望に沿ったデザインを的確に把握し作成致します。
+                                        ユーザーインターフェースを重要視した設計を行い、ご期待を超える提案を提供します。
+                                    </p>
+                                    <div class="money-estimate">
+                                        <h3>【料金目安】</h3>
+                                        <p>
                                         LP制作: <span style="font-weight:bold;color:red;">¥30,000~/1p</span><br>
                                         コーポレートサイト (10p以下): <span style="font-weight:bold;color:red;">¥80,000~</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
                         <div class="service-item wow fadeInLeft" data-wow-duration="2s" data-wow-offset="100">
                             <div class="service-image">
-                                <img src="./image/computer2.jpg" alt="wordpress" />
+                                <img src="./image/computer2.jpg" alt="wordpress"/>
                             </div>
 
                             <div class="service-desc">
-                                <div class="service-title">Wordpress</div>
-                                <div class="service-content">
-                                    コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。<br>
-                                    <div class="money-estimate">【料金目安】<br>
-                                        Wordpress移行: <span style="font-weight:bold;color:red;">¥100,000~</span><br>
-                                        Wordpress制作: <span style="font-weight:bold;color:red;">¥150,000~</span>
+                                <h3 class="service-title">Wordpress</h3>
+                                <div class="service-explain">
+                                    <p>
+                                        コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。
+                                    </p>
+                                    <div class="money-estimate">
+                                        <h3>【料金目安】</h3>
+                                        <p>
+                                        Wordpress移行: <span style="font-weight:bold;color:red;">¥30,000~</span><br>
+                                        Wordpressオリジナルテーマ制作: <span style="font-weight:bold;color:red;">¥50,000~</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="detail" style="font-size:18px;">※正式なお見積もりは、別途ご相談させていただきます。<br>※その他SNSによる集客などのマーケティングサービスも行っております。</div>
-                    <div class="cmn-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLsJHvM1oFW1FrtlyEYnmoH4SVjAH8L4nnvpmM_uaw8iGNVA/viewform?usp=sf_link">お問い合わせはこちら</a></div>
+                    <div class="detail" style="font-size:18px;"><p>※正式なお見積もりは、別途ご相談させていただきます。<br>※その他SNSによる集客などのマーケティングサービスも行っております。</p></div>
+                    <div class="cmn-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLsJHvM1oFW1FrtlyEYnmoH4SVjAH8L4nnvpmM_uaw8iGNVA/viewform?usp=sf_link">無料相談はこちら</a></div>
                 </div>
             </div>
         </section>
 
         <!--Webサイト　ポートフォリオ-->
-        <section class="portfolio">
+        <section class="portfolio cmn-section">
             <div class="inner works-point">
                 <div class="cmn-title -white">
-                    <i class="fas fa-clipboard-list"></i><p>Works</p>
+                    <i class="fas fa-clipboard-list"></i><h2>Works</h2>
                 </div>
                 <div class="portfolio-cont">
                     <div class="portfolio-list">
@@ -202,7 +222,7 @@
                                     <div class="mask1"></div>
                                     <div class="mask2"></div>
                                     <div class="caption">
-                                        <p>【Category】オリジナル作品<br><br>
+                                    <p>【Category】オリジナル作品<br><br>
                                     【Title】Wataru Inoue's Portfolio<br><br>
                                     【Skill】HTML / CSS / JQuery<br><br>
                                     【Detail】私のことをよく知ってもらうためのサイトです。
@@ -218,7 +238,7 @@
                                     <div class="mask1"></div>
                                     <div class="mask2"></div>
                                     <div class="caption">
-                                        <p>【Category】オリジナル作品<br><br>
+                                    <p>【Category】オリジナル作品<br><br>
                                     【Title】極楽亭<br><br>
                                     【Skill】HTML / CSS / JQuery / Wordpress<br><br>
                                     【Detail】架空の旅館サイトです。
@@ -231,14 +251,12 @@
                 </div>
             </div>
         </section>
-
-        
     </main>
 
     <footer class="footer">
-        <div class="inner">
+        <div class="inner cmn-section">
             <div class="cmn-title contact_title">
-                <i class="fas fa-envelope"></i><p>Contact</p>
+                <i class="fas fa-envelope"></i><h2>Contact</h2>
             </div>
             <div class="cmn-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLsJHvM1oFW1FrtlyEYnmoH4SVjAH8L4nnvpmM_uaw8iGNVA/viewform?usp=sf_link">無料相談はこちら</a></div>
             <div class="contact-text"><p>お気軽にお問い合わせ ・ご相談ください。<br>
@@ -247,17 +265,6 @@
         <div class="copyright">
             Copyright &copy; 2021 Wataru Inoue's Protfolio All Rights Reserved.
         </div>
-        <!-- <div class="contact_text">ご依頼（ご相談）はメールでもお問い合わせいただきます</div> -->
-            <!-- SNSアイコン -->
-            <!-- <div>
-            <ul class="follow-me">
-            <li><a href="mailto:yuzi0x14@gmail.com?body=ご依頼/ご相談内容" class="gmail"></a></li>
-            <li><a href="https://twitter.com/YuJi_MZTN" class="twitter"></a></li>
-            <li><a href="https://www.instagram.com/yuji_mztn/" class="instagram"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCbwZM3GtfLToCFw3dzE2S6w?view_as=subscriber" class="youtube"></a></li>
-            </ul>
-            </div> -->
-            <!--コピーライト-->
     </footer>
 </body>
 </html>

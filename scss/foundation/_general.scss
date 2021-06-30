@@ -1,5 +1,9 @@
+html{
+    font-size: 62.5%; 
+}
+
 body {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
     font-family: 'Hiragino Mincho Pro',serif;
 }
@@ -12,4 +16,43 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+@include overTab{
+    h1 {
+        font-size: 36px;
+        font-size: calc(3.4rem + ((1vw - 0.64rem) * 2.1429));
+    }
+
+    h2 {
+        font-size: 28px;
+        font-size: calc(2.7rem + ((1vw - 0.64rem) * 0.7413));
+    }
+
+    h3 {
+        font-size: 22px;
+        font-size: calc(2rem + ((1vw - 0.64rem) * 0.7413));
+    }
+
+    p {
+        font-size: 18px;
+        // font-size: calc(1rem + ((1vw - 0.768rem) * 0.3472));
+        font-size: calc(1.475rem + ((1vw - 7.68px) * 0.3472));
+    }
 }

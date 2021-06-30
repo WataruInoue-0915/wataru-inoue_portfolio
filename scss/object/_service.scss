@@ -5,8 +5,6 @@
     position: relative;
     z-index: 1;
     color: black;
-    padding-bottom: 20px;
-    padding-top: 20px;
     @include overTab-wide{
         background-attachment: fixed;
     }
@@ -21,20 +19,16 @@
   left: 0px;
   right: 0px;
   background-color: rgba($color: white, $alpha: 0.85);
-//   filter: blur(5px);
   z-index: -1;
 }
 
 .service-cont{
-    padding-right: 30px;
-    padding-left: 30px;
     @include overTab{
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: calc(2.1875rem + ((1vw - 7.68px) * 5.531));;
+        padding-left: calc(2.1875rem + ((1vw - 7.68px) * 5.531));;
     }
     
     .service-list{
-        margin-top: 30px;
         .service-item{
             + .service-item{
                 margin-top: 35px;
@@ -71,45 +65,50 @@
             .service-desc{
                 // display: flex;
                 flex: 1;
+                @include overTab {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
                 .service-title{
-                    margin-top: 20px;
+                    margin-top: 10px;
                     text-align: center;
-                    font-size: 25px;
                     border-bottom: 1px solid rgba(156, 166, 160, 1);
                     @include overTab{
                         text-align: left;
                         margin-top: 0;
                     }
                 }
-                .service-content{
+                .service-explain{
                     margin-top: 10px;
                     @include overTab{
-                        // display: flex;
-                        // align-items: center;
                     }
                     .money-estimate{
-                        text-align: center;
-                        font-size: 20px;
                         margin-top: 10px;
+                        text-align: center;
+                        @include overTab{
+                            text-align: left;
+                            margin-top: 20px;
+                        }
                     }
                 }
             }
         }
     }
     .detail{
-        text-align: center;
+        @include overTab{
+            text-align: center;
+        }
+        text-align: left;
         margin-top: 30px;
     }
     .cmn-link{
-        margin-top: 45px;
-        margin-bottom: 35px;
+        margin-top: 25px;
         a {
-            width: 50%;
-            font-size: 24px;
+            width: 70%;
             @include overTab{
-                width: 35%;
-            padding-top: 20px;
-            padding-bottom: 20px;
+                width: 20%;
+            padding-top: 10px;
+            padding-bottom: 10px;
             padding-right: 25px;
             padding-left: 25px;
         }

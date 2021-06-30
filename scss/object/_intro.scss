@@ -1,8 +1,8 @@
 .introduction{
     .inner{
         .intro-title{
-            margin-top: 0;
-            padding-top: 55px;
+            // margin-top: 0;
+            // padding-top: 55px;
         }
     }
 }
@@ -13,42 +13,62 @@
     @include overTab {
         display: flex;
         flex-flow: unset;
-        padding-top: 20px;
         padding-right: 50px;
         padding-left: 50px;
         padding-bottom: 45px;
     }
     .description-cont{
-        // margin-top: 20px;
             flex: 1;
-        .sub_title{
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            font-size: 18px;
-            + .sub_title{
-                // margin-top: 30px;
+            .description-list{
+                .description-item{
+                    margin-top: 10px;
+                    @include overTab{
+                        + .description-item{
+                        margin-top: 20px;
+                        }
+                    }
+                    .sub_title{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .introduction-text{
+                        font-size: calc(1.475rem + ((1vw - 7.68px) * 0.3472));
+                        background-color: rgba($color: #e3fdff, $alpha: 0.7);
+                        padding: 10px 20px 10px 20px ;
+                        border-radius: 15px;
+                            .myname {
+                                text-align: center;
+                                @include overTab{
+                                    text-align: left;
+                                }
+                            }
+                    }
+                    dl {
+                        font-size: calc(1.475rem + ((1vw - 7.68px) * 0.3472));
+                        .education-item{
+                            display: flex;
+                            dd{
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
             }
-        }
-        .introduction-text{
-            background-color: rgba($color: #e3fdff, $alpha: 0.7);
-            padding: 10px 20px 10px 20px ;
-            border-radius: 15px;
-        }
-    }
+        
+    
+}
     .profile-image{
-        margin-left: 0;
-        margin-top: 20px;
         @include overTab{
         width: 40%;
         display: flex;
         align-items: center;
         margin-top: 0;
-        margin-left: 50px;}
-        
+        margin-left: 50px;
+    }
         img {
             border-radius: 50%;
             width: 100%;
         }
     }
+
 }

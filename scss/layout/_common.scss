@@ -1,6 +1,10 @@
 .cmn-section {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
+    @include overTab{
+        padding-bottom: 40px;
+    }
     &.-black {
         background-color: cl(black);
     }
@@ -10,14 +14,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 45px;
+    @include overTab{
+        padding-top: 75px;
+    }
+    margin-bottom: 30px;
     font-size: 30px;
     &.-white{
         color: white;
     }
-    p {
-        margin-left: 10px;
-        margin-bottom: 0;
+    i{
+        margin-right: 10px;
     }
 
 }
@@ -26,13 +33,16 @@
     a {
         color: black;
         background-color:#1fd1fd;
-        display: flex;
         width: 155px;
         height: 37px;
+        display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
         border-radius: 8px;
         font-size: 14px;
-        margin: 0 auto;
+        @include overTab{
+            font-size: 18px;
+        }
     }
 }

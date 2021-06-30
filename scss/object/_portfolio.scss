@@ -8,17 +8,9 @@
     @include overTab-wide{
         background-attachment: fixed;
     }
-    // padding-bottom: 20px;
-    // padding-top: 20px;
     .inner{
-        padding-top: 30px;
         .portfolio-cont{
-            margin-top: 50px;
-            padding-bottom: 70px;
-            padding-right: 40px;
-            padding-left: 40px;
             .portfolio-list{
-                margin-top: 20px;
                 @include overTab{
                     display: flex;
                 }
@@ -32,71 +24,64 @@
                     }
                     a{
                         .portfolio{
-                            height:			auto;
-                            overflow:		hidden;
-                            display:		inline-block;
-                            position:		relative;
+                            height:	auto;
+                            overflow: hidden;
+                            display: inline-block;
+                            position: relative;
                             .mask1{
-                                width:			50%;	/* 幅は半部のサイズ */
-                                height:			100%;
-                                position:		absolute;
-                                top:			0;
-                                background-color:	rgba(0,0,0,0.8);
+                                width: 50%;	/* 幅は半部のサイズ */
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                background-color: rgba(0,0,0,0.8);
                                 -webkit-transition:	all 0.4s ease;
-                                transition:		all 0.4s ease;
-                                left:			-50%;	/* 枠の左に置いて表示させない */
+                                transition:	all 0.4s ease;
+                                left: -50%;	/* 枠の左に置いて表示させない */
                             }
-                            
                             .mask2{
-                                width:			50%;	/* 幅は半部のサイズ */
-                                height:			100%;
-                                position:		absolute;
-                                top:			0;
-                                background-color:	rgba(0,0,0,0.8);
+                                width: 50%;	/* 幅は半部のサイズ */
+                                height:	100%;
+                                position: absolute;
+                                top: 0;
+                                background-color:rgba(0,0,0,0.8);
                                 -webkit-transition:	all 0.4s ease;
-                                transition:		all 0.4s ease;
-                                right:			-50%;	/* 枠の右に置いて表示させない */
+                                transition:	all 0.4s ease;
+                                right: -50%;	/* 枠の右に置いて表示させない */
                                 }
                             .caption{
-                                @include overTab{
-                                    font-size:		14px;
-                                }
-                                @include overTab-wide{
-                                    font-size: 20px;
-                                }
-                                        font-size: 12px;
-                                        width:			100%;
-                                        height:			100%;
-                                        visibility:		hidden;	/* 文字を表示しない */
-                                        
-                                        position:		absolute;
-                                        top:			0px;
-                                        left:			0;
+                                        width: 100%;
+                                        height:	100%;
+                                        visibility: hidden;	/* 文字を表示しない */
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0;
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
-                                        // text-align: center;
                                         -webkit-transition:	all 0.4s step-end;
-                                        transition:		all 0.4s step-end;
+                                        transition: all 0.4s step-end;
                                         p{
-                                            color:			#fff;
-	                                        opacity:		0;	/* ホバーが解除された時すぐ消えるように、文字を表示しない */
+                                            color:#fff;
+	                                        opacity: 0;	/* ホバーが解除された時すぐ消えるように、文字を表示しない */
                                             margin-bottom: 0;
+                                            font-size: calc(0.55rem + ((1vw - 3px) * 1.3286));
+                                            @include overTab{
+                                                font-size: calc(1.175rem + ((1vw - 7.68px) * 0.3472));
+                                            }
                                         }
                                     }
-                            
                         }
                         .portfolio:hover .mask1 {
-                            left:			0px;	/* 左にずらして表示する */
+                            left: 0px;	/* 左にずらして表示する */
                         }
                         .portfolio:hover .mask2 {
                             right: 0px;	/* 右にずらして表示する */
                         }
                         .portfolio:hover .caption {
-                            visibility:		visible;	/* 文字を表示する */
+                            visibility:	visible;	/* 文字を表示する */
                         }
                         .portfolio:hover .caption p {
-                            opacity:		1;	/* 文字を表示する */
+                            opacity: 1;	/* 文字を表示する */
                         }
                     }
                 }
@@ -106,13 +91,13 @@
 }
 .portfolio::before{
     content: '';
-  position: absolute;
+    position: absolute;
   /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: rgba($color: black, $alpha: 0.5);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba($color: black, $alpha: 0.5);
 //   filter: blur(5px);
-  z-index: -1;
+    z-index: -1;
 }
